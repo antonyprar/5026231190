@@ -126,6 +126,15 @@
     color: white;
   }
 
+  .tugas-wrapper {
+  background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 40px;
+  margin-top: 60px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
 .bg-1 { background: linear-gradient(135deg, #3a86ff, #89cff0); }
 .bg-2 { background: linear-gradient(135deg, #8338ec, #a084f7); }
 .bg-3 { background: linear-gradient(135deg, #ffbe0b, #ffd60a); }
@@ -157,14 +166,18 @@
   <section class="container profile">
     <img src="{{ asset('src/img/profilA.jpg') }}" alt="Foto Profil" />
     <h4>Antony Purnamarasid August Ratulangi</h4>
-    <p>5026231190 | Mahasiswa Sistem Informasi ITS</p>
+    <p>5026231190 | Pemrogaman WEB (B)</p>
   </section>
 
   <!-- Konten Tugas -->
-  <div class="container">
+    <section class="tugas-wrapper py-5">
+        <div class="container">
     <div class="section-title">
       <h1><i class="fa-solid fa-book-open-reader me-2"></i>Link Tugas Kuliah</h1>
     </div>
+      </div>
+    </section>
+
 
     <div class="row g-4">
       <div class="col-md-4 col-sm-6">
@@ -232,7 +245,7 @@
       <div class="col-md-4 col-sm-6">
         <a href="pertemuan8" class="card-link">
           <div class="card card-glass bg-8 p-4 text-center text-white">
-            <i class="fa-brands fa-laravel icon"></i>
+            <i class="fa-brands fa-bootstrap icon"></i>
             <h3 class="title">Bootsrap Template (Danantara)</h3>
             <p class="desc">Persiapan ETS</p>
           </div>
@@ -242,7 +255,7 @@
       <div class="col-md-4 col-sm-6">
         <a href="ets" class="card-link">
           <div class="card card-glass bg-9 p-4 text-center text-white">
-            <i class="fa-brands fa-laravel icon"></i>
+            <i class="fa-brands fa-bootstrap icon"></i>
             <h3 class="title">ETS</h3>
             <p class="desc">Makeover Website Berdasarkan Pembagian Template</p>
           </div>
@@ -254,7 +267,7 @@
           <div class="card card-glass bg-6 p-4 text-center text-white">
             <i class="fa-brands fa-laravel icon"></i>
             <h3 class="title">Welcome</h3>
-            <p class="desc">Laravel blog project</p>
+            <p class="desc">Template from Laravel</p>
           </div>
         </a>
       </div>

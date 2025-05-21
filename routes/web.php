@@ -55,3 +55,7 @@ Route::get('pertemuan8', function () {
 Route::get('ets', function () {
     return view('ets');
 });
+
+Route::get('frontend', function () {
+    return view('frontend');
+});
