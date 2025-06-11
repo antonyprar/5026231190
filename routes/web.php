@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\AcController;
 // import java.io ;
 
 //System.out.println ("Hello word")
@@ -84,5 +85,24 @@ Route::post('/pegawai/store', [PegawaiDBController::class, 'store']); //jika for
 Route::get('/pegawai/edit/{id}', [PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update', [PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
-
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+
+//TUGAS CRUD
+
+//Create AC
+Route::get('/tugascrud/tambah', [AcController::class, 'create']);
+Route::post('/tugascrud/store', [AcController::class, 'store']);
+
+//Read AC
+Route::get('/tugascrud', [AcController::class, 'read']);
+
+//Update Kipas Angin
+Route::get('/tugascrud/edit/{id}', [AcController::class, 'edit']);
+Route::post('/tugascrud/update', [AcController::class, 'update']);
+
+//Delete AC
+Route::post('/tugascrud/delete/{id}', [AcController::class, 'delete']);
+
+//Search AC
+Route::get('/tugascrud/cari', [AcController::class, 'cari']);
