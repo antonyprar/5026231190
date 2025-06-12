@@ -109,9 +109,8 @@ Route::post('/tugascrud/delete/{id}', [AcController::class, 'delete']);
 Route::get('/tugascrud/cari', [AcController::class, 'cari']);
 
 // Latihan 1 - Karyawan CRUD
-// Latihan 1 - Karyawan CRUD
 
-// Create Kipas Angin
+// Create latihan1
 Route::get(
     '/latihan1/tambah',
     [KaryawanController::class, 'create']

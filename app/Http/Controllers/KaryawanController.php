@@ -30,7 +30,7 @@ class KaryawanController extends Controller
     // Read
     public function read()
     {
-        // ambil data dari table kipasangin
+        // ambil data dari table karyawan
         $karyawan = DB::table('karyawan')->paginate(10);
 
         return view('latihan1/index', ['karyawan' => $karyawan]);
@@ -54,18 +54,5 @@ class KaryawanController extends Controller
         DB::table('karyawan')->where('kodepegawai', $id)->delete();
 
         return redirect('/latihan1');
-    }
-
-    // Search
-    public function cari(Request $request)
-    {
-        // menangkap data pencarian
-        $cari = $request->cari;
-
-        $karyawan = DB::table('karyawan')
-            ->where('namalengkap', 'like', "%" . $cari . "%")
-            ->paginate();
-
-        return view('latihan1/index', ['karyawan' => $karyawan]);
     }
 }

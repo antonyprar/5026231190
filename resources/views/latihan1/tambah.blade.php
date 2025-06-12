@@ -15,7 +15,7 @@
             <!-- Form Card -->
             <div class="card shadow-sm">
                 <div class="card-body p-4">
-                    <form action="/latihan1/store" method="POST" id="kipasForm">
+                    <form action="/latihan1/store" method="POST" id="karyawanForm">
                         @csrf
 
                         <!-- Nama Field -->
