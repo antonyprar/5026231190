@@ -120,20 +120,20 @@
                 <a class="nav-link" href="#">EAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/latihan1">Latihan 1</a>
+                <a class="nav-link" href="latihan3">Latihan 3</a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link" href="/week2">Latihan 2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/bootstrap1">Latihan 3</a>
+                <a class="nav-link" href="/latihan3">Latihan 3</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/js1">Latihan 4</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/js2">Latihan 5</a>
-            </li>
+            </li> --}}
             <li class="nav-item">
                 <a class="nav-link" href="/pertemuan6">Tugas Linktree</a>
             </li>

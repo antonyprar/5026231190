@@ -11,7 +11,7 @@ class KaryawanController extends Controller
     public function create()
     {
         // memanggil view tambah
-        return view('latihan1/tambah');
+        return view('latihan3/tambah');
     }
 
     public function store(Request $request)
@@ -24,7 +24,7 @@ class KaryawanController extends Controller
             'departemen' => $request->departemen
         ]);
         // alihkan halaman ke halaman index
-        return redirect('/latihan1');
+        return redirect('/latihan3');
     }
 
     // Read
@@ -33,7 +33,7 @@ class KaryawanController extends Controller
         // ambil data dari table karyawan
         $karyawan = DB::table('karyawan')->paginate(10);
 
-        return view('latihan1/index', ['karyawan' => $karyawan]);
+        return view('latihan3/index', ['karyawan' => $karyawan]);
     }
 
     public function update(Request $request)
@@ -44,7 +44,7 @@ class KaryawanController extends Controller
             'departemen' => $request->departemen,
         ]);
 
-        return redirect('/latihan1/index');
+        return redirect('/latihan3/index');
     }
 
     // Delete
@@ -53,6 +53,6 @@ class KaryawanController extends Controller
         // menghapus data karyawan berdasarkan id yang dipilih
         DB::table('karyawan')->where('kodepegawai', $id)->delete();
 
-        return redirect('/latihan1');
+        return redirect('/latihan3');
     }
 }

@@ -110,42 +110,42 @@ Route::get('/tugascrud/cari', [AcController::class, 'cari']);
 
 // Latihan 1 - Karyawan CRUD
 
-// Create latihan1
+// Create latihan3
 Route::get(
-    '/latihan1/tambah',
+    '/latihan3/tambah',
     [KaryawanController::class, 'create']
 );
 
 Route::post(
-    '/latihan1/store',
+    '/latihan3/store',
     [KaryawanController::class, 'store']
 );
 
 // Read
 Route::get(
-    '/latihan1',
+    '/latihan3',
     [KaryawanController::class, 'read']
 );
 
 // Update
 Route::get(
-    '/latihan1/edit/{kodepegawai}',
+    '/latihan3/edit/{kodepegawai}',
     [KaryawanController::class, 'edit']
 );
 
 Route::post(
-    '/latihan1/update',
+    '/latihan3/update',
     [KaryawanController::class, 'update']
 );
 
 // Delete
 Route::post(
-    '/latihan1/delete/{kodepegawai}',
+    '/latihan3/delete/{kodepegawai}',
     [KaryawanController::class, 'delete']
 );
 
 // Search
 Route::get(
-    '/latihan1/cari',
+    '/latihan3/cari',
     [KaryawanController::class, 'cari']
 );

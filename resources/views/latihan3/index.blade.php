@@ -25,7 +25,7 @@
                     <td class="text-center">{{ $k->divisi }}</td>
                     <td class="text-center">{{ strtolower($k->departemen) }}</td>
                     <td class="text-center">
-                        <form action="/latihan1/delete/{{ $k->kodepegawai }}" method="POST" style="display:inline;">
+                        <form action="/latihan3/delete/{{ $k->kodepegawai }}" method="POST" style="display:inline;">
                             @csrf
                             <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?')">
                                 <i class="bi bi-trash"></i> Hapus
@@ -39,7 +39,7 @@
     </div>
 
     <div class="d-flex justify-content-between align-items-center mt-3">
-        <a href="/latihan1/tambah" class="btn btn-success">
+        <a href="/latihan3/tambah" class="btn btn-success">
             Tambah Karyawan <i class="bi bi-plus-circle ms-2"></i>
         </a>
         <div>

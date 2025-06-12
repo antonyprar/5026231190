@@ -7,7 +7,7 @@
             <!-- Header -->
             <div class="mb-4">
                 <h3 class="mb-3">Tambah Data Karyawan</h3>
-                <a href="/latihan1">
+                <a href="/latihan3">
                     <i class="bi bi-arrow-left"></i> Kembali
                 </a>
             </div>
@@ -15,7 +15,7 @@
             <!-- Form Card -->
             <div class="card shadow-sm">
                 <div class="card-body p-4">
-                    <form action="/latihan1/store" method="POST" id="karyawanForm">
+                    <form action="/latihan3/store" method="POST" id="karyawanForm">
                         @csrf
 
                         <!-- Nama Field -->
