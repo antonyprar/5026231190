@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\AcController;
+use App\Http\Controllers\KaryawanController;
 // import java.io ;
 
 //System.out.println ("Hello word")
@@ -106,3 +107,46 @@ Route::post('/tugascrud/delete/{id}', [AcController::class, 'delete']);
 
 //Search AC
 Route::get('/tugascrud/cari', [AcController::class, 'cari']);
+
+// Latihan 1 - Karyawan CRUD
+// Latihan 1 - Karyawan CRUD
+
+// Create Kipas Angin
+Route::get(
+    '/latihan1/tambah',
+    [KaryawanController::class, 'create']
+);
+
+Route::post(
+    '/latihan1/store',
+    [KaryawanController::class, 'store']
+);
+
+// Read
+Route::get(
+    '/latihan1',
+    [KaryawanController::class, 'read']
+);
+
+// Update
+Route::get(
+    '/latihan1/edit/{kodepegawai}',
+    [KaryawanController::class, 'edit']
+);
+
+Route::post(
+    '/latihan1/update',
+    [KaryawanController::class, 'update']
+);
+
+// Delete
+Route::post(
+    '/latihan1/delete/{kodepegawai}',
+    [KaryawanController::class, 'delete']
+);
+
+// Search
+Route::get(
+    '/latihan1/cari',
+    [KaryawanController::class, 'cari']
+);

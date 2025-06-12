@@ -120,7 +120,7 @@
                 <a class="nav-link" href="#">EAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/week1">Latihan 1</a>
+                <a class="nav-link" href="/latihan1">Latihan 1</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/week2">Latihan 2</a>
