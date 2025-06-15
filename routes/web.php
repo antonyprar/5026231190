@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\AcController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\CounterController;
 // import java.io ;
 
 //System.out.println ("Hello word")
@@ -148,4 +149,18 @@ Route::post(
 Route::get(
     '/latihan3/cari',
     [KaryawanController::class, 'cari']
+);
+
+// Latihan 1 - Counter
+
+// Read
+Route::get(
+    '/latihan1',
+    [CounterController::class, 'read']
+);
+
+// Update
+Route::get(
+    '/latihan1/edit/{id}',
+    [CounterController::class, 'edit']
 );
