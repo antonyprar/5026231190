@@ -123,7 +123,7 @@
                 <a class="nav-link" href="/latihan1">Latihan 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/week2">Latihan 2</a>
+                <a class="nav-link" href="/latihan3">Latihan 2</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/latihan3">Latihan 3</a>
@@ -143,6 +143,7 @@
     <div class="container">
         @yield('content')
     </div>
+
 
 </body>
 
