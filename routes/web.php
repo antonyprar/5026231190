@@ -8,6 +8,7 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\AcController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\CounterController;
+use App\Http\Controllers\NewKaryawanController;
 // import java.io ;
 
 //System.out.println ("Hello word")
@@ -164,3 +165,11 @@ Route::get(
     '/latihan1/edit/{id}',
     [CounterController::class, 'edit']
 );
+
+//eas
+Route::prefix('eas')->group(function () {
+    Route::get('/', [NewKaryawanController::class, 'index'])->name('eas.index');
+    Route::get('/create', [NewKaryawanController::class, 'create'])->name('eas.create');
+    Route::post('/', [NewKaryawanController::class, 'store'])->name('eas.store');
+    Route::delete('/{NIP}', [NewKaryawanController::class, 'destroy'])->name('eas.destroy');
+});
